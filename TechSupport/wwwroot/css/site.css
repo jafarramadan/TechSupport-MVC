@@ -1,0 +1,47 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation ease-in 1.5s forwards;
+    /* Delay between elements */
+    animation-delay: 0.5s;
+}
+
+.fade-in-delayed {
+    opacity: 0;
+    animation: fadeInAnimation ease-in 1.5s forwards;
+    /* This element appears after the first one */
+    animation-delay: 1.5s;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

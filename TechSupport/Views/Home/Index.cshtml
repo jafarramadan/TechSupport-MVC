@@ -1,0 +1,244 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+          rel="stylesheet" />
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>@ViewData["Title"] - DernSupport</title>
+    <style>
+        .containerh1 {
+            display: flex; /* Use flexbox to align items side by side */
+            align-items: center;
+            /*justify-content: space-between;*/
+            padding: 10px 60px 10px 60px;
+            border-radius: 10px;
+            max-width: 80%;
+            width: 100%;
+            margin: 0 auto; /* Centers the container horizontally */
+        }
+
+        .containerh2 {
+          
+            flex-direction: column;
+        }
+
+        .containerh1 h1 {
+            text-align: left;
+                margin: 10px 60px 0 50px; /*padding: top right bottom left; */
+            font-size: 3.5rem;
+            color: black; /* A blue color for a calm, modern look */
+        }
+
+            .containerh1 p {
+            color: var(--text-light);
+                text-align: center;
+            margin: 10px 50px 10px 0px;
+            text-decoration: underline;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="containerh1">
+        <h1>
+            ALL SERVICES PROVIDED <br />
+            BY OUR DIGITAL AGENCY
+        </h1>
+
+        <containerh2>
+            <p>
+                Find a best solution for your business <br />
+                and grow up your business with us!
+            </p>
+         
+            <div class="header__btns">
+                <button class="btn" onclick="location.href='@Url.Action("Login", "Account")'">JOIN US NOW</button>
+                
+                </a>
+        </containerh2>
+       
+        </div>
+
+    </div>
+    <div class="containerh1">
+    <header id="home">
+        
+        </div>
+    </div>
+    </header>
+
+    <section class="sectionbanner__container banner__container">
+        <div class="banner__card">
+            <h4>10+</h4>
+            <p>Years Experience</p>
+        </div>
+        <div class="banner__card">
+            <h4>12K</h4>
+            <p>Happy Clients</p>
+        </div>
+        <div class="banner__card">
+            <h4>4.8</h4>
+            <p>Overall Ratings</p>
+        </div>
+    </section>
+
+    <section class="section__container destination__container" id="about">
+        <h2 class="section__header">Our IT Services</h2>
+        <p class="section__description">
+            Providing Reliable and Comprehensive IT Support for Your Business
+        </p>
+        <div class="destination__grid">
+            <div class="destination__card">
+                <img src="/images/On-Site Technical Support.jpeg" alt="service" />
+                <div class="destination__card__details">
+                    <div>
+                        <h4>On-Site Technical Support</h4>
+                        <p>Immediate assistance at your location</p>
+                    </div>
+                    <div class="destination__rating">
+                        <span><i class="ri-star-fill"></i></span>
+                        4.7
+                    </div>
+                </div>
+            </div>
+            <div class="destination__card">
+                <img src="/images/Remote Troubleshooting.jpeg" alt="service" />
+                <div class="destination__card__details">
+                    <div>
+                        <h4>Remote Troubleshooting</h4>
+                        <p>Quick solutions from our experts remotely</p>
+                    </div>
+                    <div class="destination__rating">
+                        <span><i class="ri-star-fill"></i></span>
+                        4.5
+                    </div>
+                </div>
+            </div>
+            <div class="destination__card">
+                <img src="/images/Comprehensive System Repairs.jpeg" alt="service" />
+                <div class="destination__card__details">
+                    <div>
+                        <h4>System Repairs</h4>
+                        <p>Thorough repairs and maintenance for your systems</p>
+                    </div>
+                    <div class="destination__rating">
+                        <span><i class="ri-star-fill"></i></span>
+                        4.8
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section__container journey__container" id="services">
+        <h2 class="section__header">Comprehensive IT Solutions Made Simple!</h2>
+        <p class="section__description">
+            Streamlined IT Support and Services for Your Business Needs
+        </p>
+        <div class="journey__grid">
+            <div class="journey__card">
+                <div class="journey__card__bg">
+                    <span><i class="ri-computer-line"></i></span>
+                    <h4>Efficient System Repairs</h4>
+                </div>
+                <div class="journey__card__content">
+                    <span><i class="ri-computer-line"></i></span>
+                    <h4>Swift and Reliable Repairs</h4>
+                    <p>
+                        From hardware malfunctions to software issues, our team provides fast and dependable repairs to keep your systems running smoothly.
+                    </p>
+                </div>
+            </div>
+            <div class="journey__card">
+                <div class="journey__card__bg">
+                    <span><i class="ri-settings-2-line"></i></span>
+                    <h4>Tailored IT Solutions</h4>
+                </div>
+                <div class="journey__card__content">
+                    <span><i class="ri-settings-2-line"></i></span>
+                    <h4>Customized Support for Your Needs</h4>
+                    <p>
+                        We design and implement IT solutions specifically tailored to your business requirements, ensuring that your technology supports your goals.
+                    </p>
+                </div>
+            </div>
+            <div class="journey__card">
+                <div class="journey__card__bg">
+                    <span><i class="ri-shield-check-line"></i></span>
+                    <h4>Proactive Security Measures</h4>
+                </div>
+                <div class="journey__card__content">
+                    <span><i class="ri-shield-check-line"></i></span>
+                    <h4>Protect Your Data and Systems</h4>
+                    <p>
+                        Our comprehensive security solutions safeguard your data and IT infrastructure from threats, ensuring your business operations remain secure.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section__container showcase__container" id="services">
+        <div class="showcase__image">
+            <img src="/images/it-services2.jpg" alt="IT Services" />
+        </div>
+        <div class="showcase__content">
+            <h4>OPTIMIZE YOUR BUSINESS WITH TECHSUPPORT</h4>
+            <p>
+                Elevate your company's IT infrastructure with TECHSUPPORT. Our mission is to enhance your technology systems, whether you need efficient system repairs, tailored IT solutions, or robust security measures. At TECHSUPPORT, we provide expert support and personalized services designed to meet the specific needs of your business. Experience seamless IT management, proactive solutions, and exceptional customer service that ensures your operations run smoothly.
+            </p>
+            <p>
+                With TECHSUPPORT as your IT partner, managing your technology has never been more straightforward. Our dedicated team offers hands-on support, cutting-edge solutions, and valuable insights to keep your systems optimized. From initial consultation to ongoing support, we are committed to providing solutions that drive your business forward.
+            </p>
+            <div class="showcase__btn">
+                <button class="btn">
+                    CONTACT US NOW
+                    <span><i class="ri-arrow-right-line"></i></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section__container discover__container">
+        <h2 class="section__header">Explore Our IT Solutions</h2>
+        <p class="section__description">
+            Discover How Our Expertise Can Transform Your Business
+        </p>
+        <div class="discover__grid">
+            <div class="discover__card">
+                <span><i class="ri-tools-line"></i></span>
+                <h4>Comprehensive Repairs</h4>
+                <p>
+                    From troubleshooting to hardware fixes, we offer complete repair services to address any issues with your IT systems.
+                </p>
+            </div>
+            <div class="discover__card">
+                <span><i class="ri-settings-2-line"></i></span>
+                <h4>Custom IT Solutions</h4>
+                <p>
+                    Tailored IT solutions designed to meet the unique needs of your business, ensuring optimal performance and efficiency.
+                </p>
+            </div>
+            <div class="discover__card">
+                <span><i class="ri-shield-check-line"></i></span>
+                <h4>Enhanced Security</h4>
+                <p>
+                    Protect your data and systems with our advanced security solutions, safeguarding against potential threats and breaches.
+                </p>
+            </div>
+        </div>
+    </section>
+
+   
+
+</body>
+</html>
